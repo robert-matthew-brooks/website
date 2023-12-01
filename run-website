@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+gnome-terminal --tab -- bash -c 'npx kill port 5173; npx vite --open; bash'
+
+clear

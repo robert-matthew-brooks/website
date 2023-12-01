@@ -1,0 +1,150 @@
+:root {
+  --splash-bg-overflow: -20%;
+}
+
+#Splash {
+  position: relative;
+  overflow: hidden;
+}
+
+#Splash__background {
+  position: absolute;
+  z-index: -99;
+  top: var(--splash-bg-overflow);
+  left: var(--splash-bg-overflow);
+  right: var(--splash-bg-overflow);
+  bottom: var(--splash-bg-overflow);
+  display: flex;
+  transform: rotate(-5deg);
+}
+#Splash__background > div:nth-child(1) {
+  flex: 5;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+#Splash__background > div:nth-child(2) {
+  flex: 8;
+}
+
+#Splash__inner {
+  max-width: var(--global-max-width);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 12%;
+  padding: 5rem 3rem;
+}
+#Splash__left {
+  flex: 4;
+}
+#Splash__right {
+  flex: 7;
+}
+
+/*****************************/
+/* IMAGE AND BUTTONS ON LEFT */
+/*****************************/
+
+#Splash__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#Splash__photo {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: morph 50s ease infinite;
+}
+
+#Splash__photo::after {
+  content: '';
+  position: absolute;
+  z-index: -9;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(green, lightblue);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  transform: rotate(45deg);
+  animation: morph 40s ease reverse infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  25% {
+    border-radius: 70% 30% 30% 70% / 30% 30% 70% 70%;
+  }
+  50% {
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  }
+  75% {
+    border-radius: 30% 70% 70% 30% / 70% 70% 30% 30%;
+  }
+  1000% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+
+#Splash__buttons {
+  grid-area: splash-buttons;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*****************/
+/* TEXT ON RIGHT */
+/*****************/
+
+#Splash__right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#Splash__right > h3 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+#Splash__right > h1 {
+  font-size: 3rem;
+}
+
+#Splash__right > p {
+  font-size: 0.95rem;
+  line-height: 1.6rem;
+}
+
+#Splash__skill-table {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 1px;
+  background-image: radial-gradient(
+    closest-side at 30% 50%,
+    #e0e0e0 70%,
+    transparent
+  );
+}
+#Splash__skill-table > div {
+  background-color: #fafafa;
+  padding: 0.6rem;
+}
+
+#Splash__skill-table > div:nth-child(2n + 1) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #808080;
+  font-style: italic;
+}

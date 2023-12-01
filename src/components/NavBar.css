@@ -1,0 +1,34 @@
+#NavBar {
+  background-color: lightgreen;
+}
+
+#NavBar__inner {
+  max-width: var(--global-max-width);
+  margin: auto;
+  height: var(--navbar-height);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.NavBar__link {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0;
+
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: transparent;
+  transition: border-color 0.5s ease;
+}
+
+.NavBar__link:hover {
+  border-color: black;
+}
