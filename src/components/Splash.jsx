@@ -24,12 +24,11 @@ export default function Splash() {
 
         <article id="Splash__right">
           <h3>Hi &#128075;, I'm Robert, a</h3>
-          <h1>Software Developer.</h1>
+          <h2>Software Developer.</h2>
           <p>
             I combine <b>front end</b>, <b>back end</b> and{' '}
             <b>automation testing</b> to produce full stack applications. My
-            priority is always the user's experience, and I strive to create a
-            smooth and well presented interfaces.
+            priority is creating a great user experience.
           </p>
           <p>My skillset includes:</p>
           <div id="Splash__skill-table">

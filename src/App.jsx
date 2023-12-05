@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar';
 import Splash from './components/Splash';
+import RecentWork from './components/RecentWork';
 import './App.css';
 
 export default function App() {
@@ -8,6 +9,8 @@ export default function App() {
       <NavBar />
 
       <Splash />
+
+      <RecentWork />
     </>
   );
 }
