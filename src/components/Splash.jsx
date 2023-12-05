@@ -5,13 +5,13 @@ import './Splash.css';
 
 export default function Splash() {
   return (
-    <header id="Splash">
+    <section id="Splash">
       <div id="Splash__background">
         <div></div>
         <div></div>
       </div>
 
-      <div id="Splash__inner">
+      <div id="Splash__inner" className="inner-section">
         <div id="Splash__left">
           <div
             id="Splash__photo"
@@ -67,6 +67,6 @@ export default function Splash() {
           </div>
         </article>
       </div>
-    </header>
+    </section>
   );
 }

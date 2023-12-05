@@ -26,12 +26,9 @@
 }
 
 #Splash__inner {
-  max-width: var(--global-max-width);
-  margin: auto;
   display: flex;
   align-items: center;
   gap: 12%;
-  padding: 5rem 3rem;
 }
 #Splash__left {
   flex: 4;
