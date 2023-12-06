@@ -1,0 +1,9 @@
+#Projects {
+}
+
+#Projects__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+}

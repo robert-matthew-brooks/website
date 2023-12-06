@@ -3,8 +3,11 @@
 }
 
 #Splash {
+  min-height: calc(100vh - var(--navbar-height-big));
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 #Splash__background {
@@ -15,26 +18,22 @@
   right: var(--splash-bg-overflow);
   bottom: var(--splash-bg-overflow);
   display: flex;
+  opacity: 0.1;
   transform: rotate(-5deg);
 }
 #Splash__background > div:nth-child(1) {
   flex: 5;
-  background-color: rgba(0, 0, 255, 0.1);
+  background-color: blue;
 }
 #Splash__background > div:nth-child(2) {
   flex: 8;
 }
 
 #Splash__inner {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 12%;
-}
-#Splash__left {
-  flex: 4;
-}
-#Splash__right {
-  flex: 7;
 }
 
 /*****************************/
@@ -50,13 +49,23 @@
 }
 
 #Splash__photo {
-  width: 100%;
   position: relative;
+  width: 25rem;
   aspect-ratio: 1;
+}
+#Splash__photo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/profile-photo.jpg');
+  background-size: cover;
+  filter: grayscale(100%) contrast(1.3) brightness(1.2);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   animation: morph 50s ease infinite;
 }
-
 #Splash__photo::after {
   content: '';
   position: absolute;
@@ -89,59 +98,33 @@
   }
 }
 
-#Splash__buttons {
-  grid-area: splash-buttons;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
 /*****************/
 /* TEXT ON RIGHT */
 /*****************/
 
 #Splash__right {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: space-around;
+  gap: 3rem;
 }
 
-#Splash__right > h3 {
+#Splash__right > div > h3 {
   font-size: 1.8rem;
   font-weight: normal;
+  letter-spacing: 0.05rem;
 }
 
-#Splash__right > h2 {
+#Splash__right > div > h2 {
+  margin-top: 2rem;
   font-size: 3rem;
+  letter-spacing: 0.2rem;
 }
 
-#Splash__right > p {
-  font-size: 0.95rem;
-  line-height: 1.6rem;
-}
-
-#Splash__skill-table {
-  width: fit-content;
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  gap: 1px;
-  background-image: radial-gradient(
-    closest-side at 30% 50%,
-    #e0e0e0 70%,
-    transparent
-  );
-}
-#Splash__skill-table > div {
-  background-color: #fafafa;
-  padding: 0.6rem;
-}
-
-#Splash__skill-table > div:nth-child(2n + 1) {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-size: 0.8rem;
-  color: #808080;
-  font-style: italic;
+#Splash__right > div > p {
+  margin-top: 0.3rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
 }

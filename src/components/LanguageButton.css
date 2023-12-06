@@ -1,26 +1,9 @@
 .LanguageButton {
-  margin-right: 0.4rem;
-  padding: 0.3rem 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  color: rgb(77, 94, 110);
   font-size: 0.9rem;
-  border-radius: 1000px;
-}
-
-.LanguageButton--core {
-  background-color: rosybrown;
-}
-
-.LanguageButton--fe {
-  background-color: lightblue;
-}
-
-.LanguageButton--be {
-  background-color: lightcoral;
-}
-
-.LanguageButton--test {
-  background-color: yellow;
-}
-
-.LanguageButton--other {
-  background-color: lightgreen;
+  letter-spacing: 0.1rem;
+  border-radius: 7px;
+  background-color: rgb(182, 199, 216);
 }

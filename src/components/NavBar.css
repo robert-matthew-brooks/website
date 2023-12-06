@@ -1,17 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat');
+
 #NavBar {
+  position: sticky;
+  top: 0;
+  z-index: 9;
   background-color: lightgreen;
 }
 
 #NavBar__inner {
   max-width: var(--global-max-width);
   margin: auto;
-  height: var(--navbar-height);
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 0 3rem;
+  transition: 0.5s ease;
+}
+.NavBar__inner--big {
+  height: var(--navbar-height-big);
+}
+.NavBar__inner--small {
+  height: var(--navbar-height-small);
+  font-size: 0.9rem;
+}
+
+#Logo {
+  margin-right: auto;
+  padding: 0.2rem 0.5rem;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5em;
+}
+
+#Logo > a {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
 }
 
 .NavBar__link {
@@ -19,7 +44,8 @@
   align-items: center;
   padding: 0.2rem 0;
 
-  font-size: 1.25rem;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
   text-decoration: none;
   color: inherit;
 

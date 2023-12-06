@@ -1,0 +1,20 @@
+:root {
+  --underline-width: 5rem;
+  --underline-thickness: 5px;
+}
+
+.Title {
+  position: relative;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.Title:after {
+  content: '';
+  position: absolute;
+  bottom: calc(-1 * var(--underline-thickness));
+  left: calc(50% - var(--underline-width) / 2);
+  width: var(--underline-width);
+  border-bottom: var(--underline-thickness) solid lightblue;
+}

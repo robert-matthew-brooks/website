@@ -1,9 +1,11 @@
 .Button {
   width: fit-content;
-  padding: 1rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   vertical-align: middle;
-  color: black;
-  font-weight: bold;
+  color: white;
+
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   text-decoration: none;
   text-wrap: nowrap;
@@ -11,9 +13,11 @@
   background: linear-gradient(to right, lightgreen 50%, green 50%);
   background-size: 200% 100%;
   background-position: right;
-  border-radius: 1000px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 
-  transition: background-position 0.5s ease;
+  transition: background-position 0.5s ease, color 0.5s ease;
 }
 
 .Button > i {
@@ -22,5 +26,6 @@
 }
 
 .Button:hover {
+  color: black;
   background-position: left;
 }

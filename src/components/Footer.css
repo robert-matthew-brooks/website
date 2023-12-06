@@ -1,0 +1,12 @@
+#Footer {
+  background-color: #505050;
+}
+
+#Footer__inner {
+  min-height: var(--footer-height);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 3rem;
+}

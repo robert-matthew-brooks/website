@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Mern Chat App",
+    "videoUrl": "https://www.youtube.com/embed/9Iu3OsRzCzs",
+    "languages": ["MongoDB", "Express", "React", "Cypress"],
+    "description": "A hosted chat application that sends and stored messages using both a web socket server and a database. Users can create accounts, exchange messages, and see who is online. The app is mobile responsive and incorporates front end and back end testing.",
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "title": "Arduino Binary Counter",
+    "videoUrl": "https://www.youtube.com/embed/fwEVP-Mt9zM",
+    "languages": ["C++", "Arduino"],
+    "description": "A hosted chat application that sends and stored messages using both a web socket server and a database. Users can create accounts, exchange messages, and see who is online. The app is mobile responsive and incorporates front-end and back-end testing.",
+    "liveUrl": "",
+    "githubUrl": ""
+  }
+]

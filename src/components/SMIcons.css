@@ -1,10 +1,15 @@
 #SMIcons {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 1.5rem;
 }
 
-.SMIcons__icon {
-  height: 2rem;
+#SMIcons > a > img {
+  height: 2.5rem;
   aspect-ratio: 1;
+  transition: opacity 0.3s ease;
+}
+
+#SMIcons > a:hover > img {
+  opacity: 0.6;
 }

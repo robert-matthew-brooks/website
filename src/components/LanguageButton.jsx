@@ -1,9 +1,5 @@
 import './LanguageButton.css';
 
-export default function LanguageButton(props) {
-  return (
-    <span className={`LanguageButton LanguageButton--${props.type}`}>
-      {props.language}
-    </span>
-  );
+export default function LanguageButton({ children }) {
+  return <span className={`LanguageButton`}>{children}</span>;
 }

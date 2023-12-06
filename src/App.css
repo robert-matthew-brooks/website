@@ -1,11 +1,24 @@
 :root {
-  --global-max-width: 1200px;
-  --navbar-height: 4rem;
+  --global-max-width: 1300px;
+  --navbar-height-big: 6rem;
+  --navbar-height-small: 3rem;
+  --footer-height: 8rem;
+}
+
+#App {
+  min-height: 100vh;
+}
+#App > section {
+  padding: 6rem 3rem;
 }
 
 .inner-section {
   max-width: var(--global-max-width);
   margin: auto;
+}
 
-  padding: 5rem 3rem;
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
 }

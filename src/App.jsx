@@ -1,16 +1,19 @@
+import { BrowserRouter } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import NavBar from './components/NavBar';
-import Splash from './components/Splash';
-import RecentWork from './components/RecentWork';
+import Content from './components/Content';
+import Footer from './components/Footer';
 import './App.css';
 
 export default function App() {
   return (
-    <>
-      <NavBar />
-
-      <Splash />
-
-      <RecentWork />
-    </>
+    <div id="App">
+      <BrowserRouter>
+        <ScrollToTop />
+        <NavBar />
+        <Content />
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
