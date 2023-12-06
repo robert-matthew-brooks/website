@@ -1,0 +1,11 @@
+#NotFound {
+  min-height: calc(100vh - var(--navbar-height-big) - var(--footer-height));
+}
+
+#NotFound__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}

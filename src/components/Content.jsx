@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Splash from './Splash';
 import Projects from './Projects';
 import Contact from './Contact';
+import NotFound from './NotFound';
 
 export default function Content() {
   return (
@@ -19,7 +20,7 @@ export default function Content() {
       <Route path="projects" element={<Projects />} />
       <Route path="contact" element={<Contact />} />
 
-      <Route path="*" element={<h1>404 HERE</h1>} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

@@ -42,3 +42,8 @@
 #Contact__form > :last-child {
   margin-top: 1rem;
 }
+
+#Contact__success-msg {
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+}

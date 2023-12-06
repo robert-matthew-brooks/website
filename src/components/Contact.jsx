@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Title from './Title';
-import './Contact.css';
 import Button from './Button';
+import './Contact.css';
 
 export default function Contact() {
   const [isSent, setIsSent] = useState(false);
@@ -28,7 +28,7 @@ export default function Contact() {
           </form>
         )}
 
-        {isSent && <p>Message sent, thank you.</p>}
+        {isSent && <p id="Contact__success-msg">Message sent, thank you.</p>}
       </div>
     </section>
   );
